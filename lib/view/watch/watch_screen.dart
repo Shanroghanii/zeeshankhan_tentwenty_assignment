@@ -97,7 +97,7 @@ class WatchScreen extends StatelessWidget {
             child: Padding(
               padding: EdgeInsets.all(15.0),
               child: Text(
-                'Movie Name',
+                'Static',
                 style: TextStyle(color: Colors.white, fontSize: 20),
               ),
             ),
