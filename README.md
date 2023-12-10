@@ -1,60 +1,42 @@
-# Assignment
+# Flutter Project
 
-A new Flutter project.
+This Flutter project is structured to maintain a clean and organized codebase. It separates different functionalities into distinct folders for better readability and maintainability.
 
 ## Code Structure
 
-- lib
-- view
+### `lib`
 
-- screens
+- **view**
+    - **Screens**: Contains various screens/pages in the app.
+        - `DashboardScreen.dart`
+        - `MovieDetailScreen.dart`
+        - `WatchScreen.dart`
+        - ...
 
-Contains various screens or pages in the app, such as:
-DashboardScreen.dart
-MovieDetailScreen.dart
-WatchScreen.dart
-...
-- - widgets
+    - **Widgets**: Contains reusable widgets used across different screens.
+        - `CustomButton.dart`
+        - ...
 
-Contains reusable widgets used across different screens:
-CustomButton.dart
-MovieCard.dart
-UserInfo.dart
-...
-- - service
+- **Service**
+    - **api_services**: Includes classes responsible for interacting with APIs.
+        - `MovieApiService.dart`
+        - `NetworkHelper.dart`
+        - ...
 
-- api_services
-Includes classes or files responsible for interacting with APIs:
-MovieApiService.dart
-UserDataApiService.dart
-NetworkHelper.dart
-...
-- models
+- **Models**: Contains classes representing data models used within the app.
+    - `Movie.dart`
+    - ...
 
-Contains classes to represent data models used within the app:
-Movie.dart
-User.dart
-Comment.dart
-...
-- utils
+- **Utils**: Holds utility/helper functions or classes for general use.
+    - `Constants.dart`: Stores constant values.
 
-Holds utility/helper functions or classes used throughout the app:
-Constants.dart (for storing constant values)
-Helpers.dart (for utility functions)
-Validators.dart (for form validation methods)
-...
-- This folder structure helps organize the codebase into logical sections:
+    - ...
 
-- View: 
- Separates screens and reusable widgets for better maintainability and readability.
-  - Service:
-  Handles API-related functionalities, separating concerns for data retrieval.
-    - Models:
-    Contains classes to structure and manage data received from APIs or used internally.
-      - Utils: 
-      Stores utility functions, constants, validators, and other helper code for general use.
+## Folder Structure Benefits
 
+- **View**: Separates screens and widgets for better organization and readability.
+- **Service**: Handles API-related tasks to maintain code separation.
+- **Models**: Contains structured classes to manage app data.
+- **Utils**: Stores common utilities and helper functions for easy access.
 
-
-
-
+This folder structure aims to facilitate code management, making it simpler to find specific functionalities and maintain a clean, structured project.
